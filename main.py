@@ -15,10 +15,11 @@ sessionData = kernel.getSessionData(sessionId)
 
 
 occupation=0
-path = "C:\Users\jon\Desktop\PyBot\users.txt"
+path = "E:\FII\Anul 3\Inteligenta Artificiala\Laborator 1\PyBot\users.txt"
 username=""
 ok=0
 exists=0
+rem_count=0
 
 while True:
     message = raw_input("\nYou: ")
@@ -66,7 +67,10 @@ while True:
                                 file.write(username + ' ' + age + ' ' + occupation + '\n')
                              ok = 1
                          else:
-                             print("Anon: Have we talked before?")
+                             if rem_count == 0:
+                                 print("Anon: Have we talked before?")
+                                 rem_count = 1
+
     #if ok==1:
         #kernel.bootstrap(learnFiles="std_startup.xml", commands="LOAD AIML B")
         #kernel.saveBrain("bot_brain.brn")

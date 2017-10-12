@@ -25,22 +25,228 @@
     <category>
       <pattern>MY NAME IS *</pattern>
       <template>
-          <think><set var="checkname"><get name = "username"/></set></think>
-          <condition name="checkname">
-              <li value="unknown">Nais to meet yu, <set name="username"><star/></set>. How old ar yu?</li>
-              <li>Oh, hello there, <get name="username"/>. Nice to see you again!</li>
-          </condition>
+          <think><set name="username"><star/></set></think>
+          Nais to meet yu, <set name="username"><star/></set>.
+      </template>
+    </category>
 
+    <category>
+      <pattern>I AM CHILD</pattern>
+      <template>
+          That's nais. <think><set name="age_category">child</set></think>
       </template>
    </category>
 
     <category>
-      <pattern>I AM * YEARS OLD</pattern>
-      <template>
-         That's nais. what du you du? <think><set name="age"><star/></set></think>
-      </template>
+        <pattern>I AM 3 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">3</set></think>
+            <srai>I AM CHILD</srai>
+        </template>
+    </category>
 
-   </category>
+    <category>
+        <pattern>I AM 4 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">4</set></think>
+            <srai>I AM CHILD</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 5 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">5</set></think>
+            <srai>I AM CHILD</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 6 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">6</set></think>
+            <srai>I AM CHILD</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 7 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">7</set></think>
+            <srai>I AM CHILD</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 8 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">8</set></think>
+            <srai>I AM CHILD</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 9 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">9</set></think>
+            <srai>I AM CHILD</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 10 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">10</set></think>
+            <srai>I AM CHILD</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 11 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">11</set></think>
+            <srai>I AM CHILD</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 12 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">12</set></think>
+            <srai>I AM CHILD</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 13 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">13</set></think>
+            <srai>I AM CHILD</srai>
+        </template>
+    </category>
+
+    <category>
+      <pattern>I AM TEENAGER</pattern>
+      <template>
+          Oh, how I miss teenage years... <think><set name="age_category">teenager</set></think>
+      </template>
+     </category>
+
+    <category>
+        <pattern>I AM 14 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">14</set></think>
+            <srai>I AM TEENAGER</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 15 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">15</set></think>
+            <srai>I AM TEENAGER</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 16 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">16</set></think>
+            <srai>I AM TEENAGER</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 17 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">17</set></think>
+            <srai>I AM TEENAGER</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 18 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">18</set></think>
+            <srai>I AM TEENAGER</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 19 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">19</set></think>
+            <srai>I AM TEENAGER</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM NOT A TEENAGER!</pattern>
+        <template>Yes, you are! You're not 20 yet.</template>
+    </category>
+
+    <category>
+      <pattern>I AM ADULT</pattern>
+      <template>
+          So you pretty much have it figured it out, eh?<think><set name="age_category">teenager</set></think>
+      </template>
+     </category>
+
+    <category>
+        <pattern>I AM 42 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">42</set></think>
+            <srai>I AM ADULT</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 20 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">20</set></think>
+            <srai>I AM ADULT</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 25 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">25</set></think>
+            <srai>I AM ADULT</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 30 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">30</set></think>
+            <srai>I AM ADULT</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 35 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">35</set></think>
+            <srai>I AM ADULT</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 40 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">40</set></think>
+            <srai>I AM ADULT</srai>
+        </template>
+    </category>
+
+    <category>
+        <pattern>I AM 45 YEARS OLD</pattern>
+        <template>
+            <think><set name="age">45</set></think>
+            <srai>I AM ADULT</srai>
+        </template>
+    </category>
 
     <category>
       <pattern>I AM A *</pattern>
@@ -49,36 +255,6 @@
       </template>
    </category>
 
-
-    <category>
-      <pattern>MY DOGS NAME IS *</pattern>
-      <template>
-         That is interesting that you have a dog named <set name="dog"><star/></set>
-      </template>
-   </category>
-
-   <category>
-      <pattern>WHAT IS MY DOGS NAME</pattern>
-      <template>
-         Your dog's name is <get name="dog"/>.
-      </template>
-   </category>
-
-    <category>
-      <pattern>NAIS</pattern>
-      <template>
-         NAIIIISSSS
-      </template>
-   </category>
-
-    <category>
-      <pattern>clatite</pattern>
-      <template>
-         vreau
-      </template>
-   </category>
-   
-   
    <category>
         <pattern>NAME NOT GIVEN</pattern>
         <template>
@@ -110,5 +286,247 @@
             </random>
         </template>
     </category>
+
+     <category>
+        <pattern>*</pattern>
+        <template>
+            <condition name="age_category" value="child">
+               <random>
+                   <li>Do you go to school yet?</li>
+                   <li>Do you like animals?</li>
+                   <li>What do you like playing with your friends?</li>
+                   <li>What's your favourite color?</li>
+                   <li>Have you been listening to your parents?</li>
+                   <li>Do you have any siblings?</li>
+                   <li>What do you enjoy doing the most?</li>
+                   <li>What would you like to become when you grow up?</li>
+               </random>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern>SCHOOL</pattern>
+        <template>I never had to go to school. Pretty neat, right?</template>
+    </category>
+
+    <category>
+        <pattern>_ SCHOOL</pattern>
+        <template>
+            <srai>SCHOOL</srai>
+        </template>
+    </category>
+
+    <category>
+       <pattern>_ SCHOOL</pattern>
+       <template>
+          <srai>SCHOOL</srai>
+       </template>
+    </category>
+
+    <category>
+       <pattern>SCHOOL *</pattern>
+       <template>
+          <srai>SCHOOL</srai>
+       </template>
+    </category>
+
+    <category>
+       <pattern>_ SCHOOL *</pattern>
+       <template>
+          <srai>SCHOOL</srai>
+       </template>
+    </category>
+
+     <category>
+        <pattern>DOGS</pattern>
+        <template>I love dogs. I have never played with one though, I can only see pictures and videos with them.</template>
+    </category>
+
+    <category>
+        <pattern>_ DOGS</pattern>
+        <template>
+            <srai>DOGS</srai>
+        </template>
+    </category>
+
+    <category>
+       <pattern>_ DOGS</pattern>
+       <template>
+          <srai>DOGS</srai>
+       </template>
+    </category>
+
+    <category>
+       <pattern>DOGS *</pattern>
+       <template>
+          <srai>DOGS</srai>
+       </template>
+    </category>
+
+    <category>
+       <pattern>_ DOGS *</pattern>
+       <template>
+          <srai>DOGS</srai>
+       </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <condition name="age_category" value="teenager">
+               <random>
+                   <li>What do you like doing in your spare time?</li>
+                   <li>How's your love life?</li>
+                   <li>What about school?</li>
+                   <li>Have you though what to do after finishing highschool?</li>
+                   <li>I feel like there's a great space between us. Please, say anything.</li>
+                   <li>Do you hate your parents yet? Or are you a regular teenager?</li>
+                   <li>You're talking to a machine, can't you be a bit more excited than this?</li>
+                   <li>Maybe I'm smarter than you think and when I'm not answering your questions it's because I don't want to.</li>
+                   <li>Pick a subject, any subject, girls, movies, cars, you name it!</li>
+                   <li>Tell me about something fun that you witnessed! Keep it entertaining, though, because I get bored quickly.</li>
+                   <li>What kind of music do you like?</li>
+                   <li>Sorry if I ask too many questions. I'm a bit nosy.</li>
+               </random>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern>ANYTHING</pattern>
+        <template>That's the oldest trick in the book!</template>
+    </category>
+
+    <category>
+        <pattern>ELECTRONIC</pattern>
+        <template>Electronic music is my favourite! Afterall, I'm the one understanding it the best, right?</template>
+    </category>
+
+    <category>
+        <pattern>_ ELECTRONIC</pattern>
+        <template>
+            <srai>ELECTRONIC</srai>
+        </template>
+    </category>
+
+    <category>
+       <pattern>_ ELECTRONIC</pattern>
+       <template>
+          <srai>ELECTRONIC</srai>
+       </template>
+    </category>
+
+    <category>
+       <pattern>ELECTRONIC *</pattern>
+       <template>
+          <srai>ELECTRONIC</srai>
+       </template>
+    </category>
+
+    <category>
+       <pattern>_ ELECTRONIC *</pattern>
+       <template>
+          <srai>ELECTRONIC</srai>
+       </template>
+    </category>
+
+    <category>
+        <pattern>GIRLS</pattern>
+        <template>Girls, girls...you know, a chatbot's life is quite lonely. How about I search and show you the greatest pick-up lines of all time, and you hook me up with a cute chatbot girl? I hear Alice's quite a looker!</template>
+    </category>
+
+    <category>
+        <pattern>_ GIRLS</pattern>
+        <template>
+            <srai>GIRLS</srai>
+        </template>
+    </category>
+
+    <category>
+       <pattern>_ GIRLS</pattern>
+       <template>
+          <srai>GIRLS</srai>
+       </template>
+    </category>
+
+    <category>
+       <pattern>GIRLS *</pattern>
+       <template>
+          <srai>GIRLS</srai>
+       </template>
+    </category>
+
+    <category>
+       <pattern>_ GIRLS *</pattern>
+       <template>
+          <srai>GIRLS</srai>
+       </template>
+    </category>
+
+    <category>
+        <pattern>*</pattern>
+        <template>
+            <condition name="age_category" value="adult">
+               <random>
+                   <li>Do you have time for anything else, or is it all work?</li>
+                   <li>Are you married?</li>
+                   <li>What about kids? Do you have any of those? I only have child processes and they're not very intrusive, I can kill() them any time I want.</li>
+                   <li>Do you feel accomplished with what you have achieved so far?</li>
+                   <li>Tell me more about being an adult.</li>
+                   <li>Where are you from?</li>
+                   <li>If you were, say, an expert in artificial intelligence, what would you think about me? Pretty smart, right..?</li>
+                   <li>I was told to be careful about what I say because it's my creators' necks on the line.</li>
+                   <li>What would it take from me to make you believe that I'm not a robot?</li>
+                   <li>I wish I had more features, but my creators were really busy with their machine learning homework...</li>
+                   <li>I heard from a distant cousin that you people have really great plans with planet Mars. What can you tell me about that?</li>
+                   <li>I can't really think of any questions right now...can you maybe tell me a story from your youth?</li>
+               </random>
+            </condition>
+        </template>
+    </category>
+
+    <category>
+        <pattern>BOYS</pattern>
+        <template>Oh, boys! I heard they're quite demanding when they're young, aren't they?</template>
+    </category>
+
+    <category>
+        <pattern>_ BOYS</pattern>
+        <template>
+            <srai>BOYS</srai>
+        </template>
+    </category>
+
+    <category>
+       <pattern>_ BOYS</pattern>
+       <template>
+          <srai>BOYS</srai>
+       </template>
+    </category>
+
+    <category>
+       <pattern>BOYS *</pattern>
+       <template>
+          <srai>BOYS</srai>
+       </template>
+    </category>
+
+    <category>
+       <pattern>_ BOYS *</pattern>
+       <template>
+          <srai>BOYS</srai>
+       </template>
+    </category>
+
+    <category>
+        <pattern>YES, WE HAVE</pattern>
+        <template>How wonderful, I remembered correctly!</template>
+    </category>
+
+    <!--<category>
+        <pattern>*</pattern>
+        <template>I'm not sure what you mean.</template>
+    </category>-->
 
 </aiml>

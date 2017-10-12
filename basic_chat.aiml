@@ -77,5 +77,38 @@
          vreau
       </template>
    </category>
+   
+   
+   <category>
+        <pattern>NAME NOT GIVEN</pattern>
+        <template>
+            <random>
+                <li>What's your name?</li>
+                <li>Please tell me your name</li>
+                <li>Who are you?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>AGE NOT GIVEN</pattern>
+        <template>
+            <random>
+                <li>What's your age?</li>
+                <li>Please tell me your age</li>
+                <li>How old are you?</li>
+            </random>
+        </template>
+    </category>
+
+    <category>
+        <pattern>OCCUPATION NOT GIVEN</pattern>
+        <template>
+            <random>
+                <li>What's your occupation?</li>
+                <li>Please tell me your occupation</li>
+            </random>
+        </template>
+    </category>
 
 </aiml>

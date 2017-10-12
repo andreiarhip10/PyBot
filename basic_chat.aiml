@@ -15,12 +15,22 @@
         </template>
     </category>
 
-
+    <category>
+        <pattern>HOW ARE YOU</pattern>
+        <template>
+            I'm fine, how are you?
+        </template>
+    </category>
 
     <category>
       <pattern>MY NAME IS *</pattern>
       <template>
-         Nais to meet yu, <set name="username"><star/></set>. How old ar yu?
+          <think><set var="checkname"><get name = "username"/></set></think>
+          <condition name="checkname">
+              <li value="unknown">Nais to meet yu, <set name="username"><star/></set>. How old ar yu?</li>
+              <li>Oh, hello there, <get name="username"/>. Nice to see you again!</li>
+          </condition>
+
       </template>
    </category>
 

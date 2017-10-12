@@ -1,0 +1,71 @@
+<aiml version="1.0.1" encoding="UTF-8">
+<!-- basic_chat.aiml -->
+
+    <category>
+        <pattern>HELLO</pattern>
+        <template>
+            Hi!
+        </template>
+    </category>
+
+    <category>
+        <pattern>WHAT ARE YOU</pattern>
+        <template>
+            I'm a cat!
+        </template>
+    </category>
+
+
+
+    <category>
+      <pattern>MY NAME IS *</pattern>
+      <template>
+         Nais to meet yu, <set name="username"><star/></set>. How old ar yu?
+      </template>
+   </category>
+
+    <category>
+      <pattern>I AM * YEARS OLD</pattern>
+      <template>
+         That's nais. what du you du? <think><set name="age"><star/></set></think>
+      </template>
+
+   </category>
+
+    <category>
+      <pattern>I AM A *</pattern>
+      <template>
+         Lief is hard, am I rite?<think><set name="occupation"><star/></set></think>
+      </template>
+   </category>
+
+
+    <category>
+      <pattern>MY DOGS NAME IS *</pattern>
+      <template>
+         That is interesting that you have a dog named <set name="dog"><star/></set>
+      </template>
+   </category>
+
+   <category>
+      <pattern>WHAT IS MY DOGS NAME</pattern>
+      <template>
+         Your dog's name is <get name="dog"/>.
+      </template>
+   </category>
+
+    <category>
+      <pattern>NAIS</pattern>
+      <template>
+         NAIIIISSSS
+      </template>
+   </category>
+
+    <category>
+      <pattern>clatite</pattern>
+      <template>
+         vreau
+      </template>
+   </category>
+
+</aiml>

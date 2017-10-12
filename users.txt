@@ -33,3 +33,7 @@ brad 20 vetenerian
 jonson 15 student
 bar 25 doctor
 charles 5 pupil
+bobo 20 doctor
+cezar 40 boss
+vos 45 doctor
+bobos 40 doctor

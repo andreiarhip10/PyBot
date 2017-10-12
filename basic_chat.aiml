@@ -188,7 +188,7 @@
     <category>
       <pattern>I AM ADULT</pattern>
       <template>
-          So you pretty much have it figured it out, eh?<think><set name="age_category">teenager</set></think>
+          So you pretty much have it figured it out, eh?<think><set name="age_category">adult</set></think>
       </template>
      </category>
 

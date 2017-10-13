@@ -520,6 +520,39 @@
     </category>
 
     <category>
+        <pattern>TURING</pattern>
+        <template>You know of Alan Turing? I've been studying him for quite some time and I've been fascinated by his work.</template>
+    </category>
+
+    <category>
+        <pattern>_ TURING</pattern>
+        <template>
+            <srai>TURING</srai>
+        </template>
+    </category>
+
+    <category>
+       <pattern>_ TURING</pattern>
+       <template>
+          <srai>TURING</srai>
+       </template>
+    </category>
+
+    <category>
+       <pattern>TURING *</pattern>
+       <template>
+          <srai>TURING</srai>
+       </template>
+    </category>
+
+    <category>
+       <pattern>_ TURING *</pattern>
+       <template>
+          <srai>TURING</srai>
+       </template>
+    </category>
+
+    <category>
         <pattern>YES, WE HAVE</pattern>
         <template>How wonderful, I remembered correctly!</template>
     </category>

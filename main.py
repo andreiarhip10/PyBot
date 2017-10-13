@@ -71,6 +71,7 @@ while True:
                                  print("Anon: Have we talked before?")
                                  rem_count = 1
 
+
     #if ok==1:
         #kernel.bootstrap(learnFiles="std_startup.xml", commands="LOAD AIML B")
         #kernel.saveBrain("bot_brain.brn")
